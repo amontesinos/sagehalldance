@@ -14,13 +14,14 @@ const STATE = {
   selectedReel: null
 };
 
-// Storage Key
+// Storage Keys
 const STORAGE_KEY = 'sagehall_dance_events_v1';
 const ADMIN_AUTH_KEY = 'sagehall_admin_auth';
+const GCAL_CONFIG_KEY = 'sagehall_gcal_config';
 
 // Initialize
-document.addEventListener('DOMContentLoaded', () => {
-  loadEventsFromStorage();
+document.addEventListener('DOMContentLoaded', async () => {
+  await loadEvents();
   checkAdminSession();
   initHeroNextDance();
   renderEvents();
@@ -29,7 +30,63 @@ document.addEventListener('DOMContentLoaded', () => {
   bindEventListeners();
 });
 
-function loadEventsFromStorage() {
+async function loadEvents() {
+  // Check if live Google Calendar is configured
+  const gcalConfig = JSON.parse(localStorage.getItem(GCAL_CONFIG_KEY) || 'null');
+  
+  if (gcalConfig && gcalConfig.apiKey && gcalConfig.calendarId) {
+    try {
+      showToast('🔄 Syncing live from Google Calendar...');
+      const url = `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(gcalConfig.calendarId)}/events?key=${gcalConfig.apiKey}&singleEvents=true&orderBy=startTime&timeMin=${new Date().toISOString()}`;
+      const response = await fetch(url);
+      if (!response.ok) throw new Error('Failed to fetch GCal API');
+      
+      const data = await response.json();
+      
+      // Parse Google Calendar items into our app format
+      STATE.events = data.items.map(item => {
+        // Fallback for venues
+        let venueId = 'fairgrounds';
+        const loc = (item.location || '').toLowerCase();
+        if (loc.includes('mountain')) venueId = 'mountain_valley';
+        if (loc.includes('cache bar')) venueId = 'cache_bar';
+
+        // Extract date
+        const dateStr = item.start.date || item.start.dateTime.split('T')[0];
+        
+        // Extract time strings
+        let timeStr = '8:00 PM - 11:30 PM';
+        if (item.start.dateTime && item.end.dateTime) {
+          const start = new Date(item.start.dateTime).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+          const end = new Date(item.end.dateTime).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+          timeStr = `${start} - ${end}`;
+        }
+
+        return {
+          id: item.id,
+          title: item.summary || 'Country Swing Dance',
+          date: dateStr,
+          time: timeStr,
+          lessonTime: 'Included',
+          socialTime: 'Following Lesson',
+          venueId: venueId,
+          price: '$8 Entry',
+          theme: '',
+          notes: item.description || 'Synced from Google Calendar'
+        };
+      });
+
+      // Save a local cache
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(STATE.events));
+      showToast('✅ Calendar synced successfully!');
+      return;
+    } catch (e) {
+      console.error('Google Calendar Sync Error:', e);
+      showToast('⚠️ Google Calendar sync failed. Falling back to local data.');
+    }
+  }
+
+  // Fallback to local storage or mock data
   const saved = localStorage.getItem(STORAGE_KEY);
   if (saved) {
     try {
@@ -39,7 +96,7 @@ function loadEventsFromStorage() {
     }
   } else {
     STATE.events = [...INITIAL_EVENTS];
-    saveEventsToStorage();
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(STATE.events));
   }
 }
 
@@ -522,6 +579,23 @@ window.logoutAdmin = () => {
   document.getElementById('adminModal').classList.remove('active');
   renderEvents();
   showToast('Signed out of organizer mode.');
+};
+
+window.saveGoogleCalendarConfig = async () => {
+  const calId = document.getElementById('gcalIdInput').value.trim();
+  const apiKey = document.getElementById('gcalApiKeyInput').value.trim();
+  if (!calId || !apiKey) {
+    alert("Please provide both the Calendar ID and the API Key.");
+    return;
+  }
+  
+  const config = { calendarId: calId, apiKey: apiKey };
+  localStorage.setItem('sagehall_gcal_config', JSON.stringify(config));
+  showToast("Google Calendar credentials saved! Syncing now...");
+  await loadEvents();
+  renderEvents();
+  renderCalendar();
+  initHeroNextDance();
 };
 
 window.selectDateEvent = (id) => {

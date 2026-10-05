@@ -3,11 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sage Hall Dance | Country Swing & Line Dancing in Cache Valley, UT</title>
-  <meta name="description" content="Logan's favorite country swing dance community. Weekly beginner lessons, rotating venues at Fairgrounds Event Center & Mountain Valley Athletics, and high-energy social dancing.">
   
-  <!-- Favicon SVG -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23FAF6EF' stroke='%233D2314' stroke-width='4'/><path d='M30,70 L30,45 L50,30 L70,45 L70,70 Z' fill='none' stroke='%239E3D24' stroke-width='4'/><path d='M42,70 L42,52 L58,52 L58,70 Z' fill='%23D48B28'/></svg>">
+  <!-- SEO & Primary Meta Tags -->
+  <title>Sage Hall Dance | Country Swing & Line Dancing in Cache Valley, UT</title>
+  <meta name="title" content="Sage Hall Dance | Country Swing & Line Dancing">
+  <meta name="description" content="Logan's favorite country swing dance community. Weekly beginner lessons, rotating venues at Fairgrounds Event Center & Mountain Valley Athletics, and high-energy social dancing.">
+  <meta name="keywords" content="Country Swing, Line Dancing, Logan Utah, Cache Valley, Sage Hall, USU Dance">
+  <meta name="theme-color" content="#9E3D24">
+
+  <!-- Open Graph / Facebook / iMessage -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://amontesinos.github.io/sagehalldance/">
+  <meta property="og:title" content="Sage Hall Dance | Country Swing in Logan, UT">
+  <meta property="og:description" content="Join us for weekly country swing dancing, line dances, and beginner lessons across Cache Valley! No partner needed.">
+  <meta property="og:image" content="https://amontesinos.github.io/sagehalldance/assets/img/september_flyer.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://amontesinos.github.io/sagehalldance/">
+  <meta property="twitter:title" content="Sage Hall Dance | Country Swing in Logan, UT">
+  <meta property="twitter:description" content="Join us for weekly country swing dancing, line dances, and beginner lessons across Cache Valley! No partner needed.">
+  <meta property="twitter:image" content="https://amontesinos.github.io/sagehalldance/assets/img/september_flyer.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,21 +49,7 @@
   <header class="navbar">
     <div class="container nav-container">
       <a href="#" class="brand-link">
-        <!-- Sage Hall Barn Seal SVG -->
-        <svg class="brand-badge-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="50" cy="50" r="46" stroke="#3D2314" stroke-width="3" stroke-dasharray="4 2"/>
-          <circle cx="50" cy="50" r="42" stroke="#9E3D24" stroke-width="1.5"/>
-          <!-- Barn silhouette -->
-          <path d="M26 68 L26 44 L50 26 L74 44 L74 68 Z" fill="#F3ECE1" stroke="#3D2314" stroke-width="3"/>
-          <polygon points="50,22 46,26 54,26" fill="#9E3D24"/>
-          <!-- Barn doors -->
-          <rect x="40" y="48" width="20" height="20" fill="#9E3D24" stroke="#3D2314" stroke-width="2"/>
-          <line x1="40" y1="48" x2="60" y2="68" stroke="#F3ECE1" stroke-width="2"/>
-          <line x1="60" y1="48" x2="40" y2="68" stroke="#F3ECE1" stroke-width="2"/>
-          <!-- Wheat / Floral sprays -->
-          <path d="M18 78 Q30 72 45 74" stroke="#D48B28" stroke-width="2" stroke-linecap="round"/>
-          <path d="M82 78 Q70 72 55 74" stroke="#D48B28" stroke-width="2" stroke-linecap="round"/>
-        </svg>
+        <img src="assets/img/logo.png" alt="Sage Hall Badge" class="brand-badge-icon" style="border-radius: 50%; object-fit: cover; border: 2px solid var(--border-color);">
         <div class="brand-text-wrap">
           <span class="brand-title">Sage Hall</span>
           <span class="brand-tagline">Country Swing Dance</span>
@@ -112,14 +117,7 @@
       <!-- Hero Visual Flyer Card -->
       <div class="hero-card-flyer">
         <div class="flyer-badge-art">
-          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="48" stroke="#D48B28" stroke-width="2"/>
-            <circle cx="50" cy="50" r="44" stroke="#3D2314" stroke-width="3" stroke-dasharray="4 2"/>
-            <path d="M26 68 L26 44 L50 26 L74 44 L74 68 Z" fill="#F3ECE1" stroke="#3D2314" stroke-width="3"/>
-            <rect x="40" y="48" width="20" height="20" fill="#9E3D24" stroke="#3D2314" stroke-width="2"/>
-            <line x1="40" y1="48" x2="60" y2="68" stroke="#F3ECE1" stroke-width="2"/>
-            <line x1="60" y1="48" x2="40" y2="68" stroke="#F3ECE1" stroke-width="2"/>
-          </svg>
+          <img src="assets/img/logo.png" alt="Sage Hall Badge" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--border-color);">
         </div>
         <div class="flyer-heading">SAGE HALL</div>
         <div class="flyer-subheading">Country Swing Dance Schedule</div>
@@ -481,21 +479,23 @@
         <!-- Tab: Google Calendar Sync -->
         <div id="tabSync" class="admin-tab-pane" style="display: none;">
           <div class="sync-info-box">
-            <h4>💡 Zero-Code Updating: Google Calendar Live Sync</h4>
+            <h4>💡 Zero-Code Updating: Google Calendar API Sync</h4>
             <p>
-              Instead of logging into the website every week, Sage Hall organizers can link their public <strong>Google Calendar ID</strong> or public <strong>iCal URL</strong>.
-            </p>
-            <p style="margin-top: 8px;">
-              Whenever you add or change an event in your phone's Google Calendar app, the website calendar updates automatically!
+              Instead of manually logging into this website to add events, link your public Google Calendar. 
+              Once linked, simply add a dance to your Google Calendar app on your phone, and it instantly appears here!
             </p>
           </div>
 
           <div class="form-group">
-            <label for="gcalIdInput">Public Google Calendar ID or iCal Feed:</label>
-            <input type="text" id="gcalIdInput" class="form-input" placeholder="e.g. sagehalldance@gmail.com">
+            <label for="gcalIdInput">Public Google Calendar ID:</label>
+            <input type="text" id="gcalIdInput" class="form-input" placeholder="e.g. your_id@group.calendar.google.com">
           </div>
-          <button class="btn btn-primary" onclick="alert('Google Calendar ID saved! Events will automatically pull from your live calendar feed.')">
-            Save & Connect Google Calendar
+          <div class="form-group">
+            <label for="gcalApiKeyInput">Google Cloud API Key (Calendar API v3 enabled):</label>
+            <input type="password" id="gcalApiKeyInput" class="form-input" placeholder="AIzaSy...">
+          </div>
+          <button class="btn btn-primary" onclick="window.saveGoogleCalendarConfig()">
+            Save & Connect Live Calendar
           </button>
         </div>
 

@@ -1317,6 +1317,9 @@ button {
   .hero-grid {
     grid-template-columns: 1fr;
   }
+  .hero-title {
+    font-size: 2.8rem;
+  }
   .event-card {
     grid-template-columns: 90px 1fr;
     gap: 16px;
@@ -1332,6 +1335,9 @@ button {
   .footer-grid {
     grid-template-columns: 1fr;
   }
+  .cal-days-header {
+    font-size: 0.7rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1341,11 +1347,30 @@ button {
   .mobile-menu-toggle {
     display: block;
   }
+  /* Switch calendar grid to horizontal scroll on mobile */
+  .calendar-grid-view {
+    padding: 12px;
+    overflow-x: auto;
+  }
   .cal-days-grid {
+    min-width: 600px;
     gap: 4px;
   }
+  .cal-days-header {
+    min-width: 600px;
+  }
   .cal-day-cell {
-    min-height: 70px;
+    min-height: 80px;
     padding: 4px;
+  }
+  .cal-event-pill {
+    font-size: 0.65rem;
+    padding: 2px 4px;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .form-row-2 {
+    grid-template-columns: 1fr;
   }
 }
