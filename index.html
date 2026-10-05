@@ -1,520 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- SEO & Primary Meta Tags -->
-  <title>Sage Hall Dance | Country Swing & Line Dancing in Cache Valley, UT</title>
-  <meta name="title" content="Sage Hall Dance | Country Swing & Line Dancing">
-  <meta name="description" content="Logan's favorite country swing dance community. Weekly beginner lessons, rotating venues at Fairgrounds Event Center & Mountain Valley Athletics, and high-energy social dancing.">
-  <meta name="keywords" content="Country Swing, Line Dancing, Logan Utah, Cache Valley, Sage Hall, USU Dance">
-  <meta name="theme-color" content="#9E3D24">
-
-  <!-- Open Graph / Facebook / iMessage -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://amontesinos.github.io/sagehalldance/">
-  <meta property="og:title" content="Sage Hall Dance | Country Swing in Logan, UT">
-  <meta property="og:description" content="Join us for weekly country swing dancing, line dances, and beginner lessons across Cache Valley! No partner needed.">
-  <meta property="og:image" content="https://amontesinos.github.io/sagehalldance/assets/img/september_flyer.png">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://amontesinos.github.io/sagehalldance/">
-  <meta property="twitter:title" content="Sage Hall Dance | Country Swing in Logan, UT">
-  <meta property="twitter:description" content="Join us for weekly country swing dancing, line dances, and beginner lessons across Cache Valley! No partner needed.">
-  <meta property="twitter:image" content="https://amontesinos.github.io/sagehalldance/assets/img/september_flyer.png">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/img/logo.png">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sage Hall Dance | Country Swing & Social Dancing</title>
+    <meta name="description" content="Sage Hall Dance - Country swing dance schedule, lessons, and social dancing at Fairgrounds Event Center, Mountain Valley Athletics, and Cache Bar.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Montserrat:wght@400;500;600;700;800&family=Rye&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-  <!-- Top Announcement Bar -->
-  <div class="top-alert-banner">
-    <span class="alert-pill">Tonight's Dance</span>
-    <span id="topAlertText">Checking tonight's schedule in Cache Valley...</span>
-    <a href="#schedule">View Calendar &darr;</a>
-  </div>
-
-  <!-- Main Navigation -->
-  <header class="navbar">
-    <div class="container nav-container">
-      <a href="#" class="brand-link">
-        <img src="assets/img/logo.png" alt="Sage Hall Badge" class="brand-badge-icon" style="border-radius: 50%; object-fit: cover; border: 2px solid var(--border-color);">
-        <div class="brand-text-wrap">
-          <span class="brand-title">Sage Hall</span>
-          <span class="brand-tagline">Country Swing Dance</span>
-        </div>
-      </a>
-
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#schedule">Schedule</a></li>
-          <li><a href="#venues">Venues</a></li>
-          <li><a href="#reels">Reels & Videos</a></li>
-          <li><a href="#beginners">Beginners Guide</a></li>
-        </ul>
-      </nav>
-
-      <div class="nav-cta-group">
-        <button id="adminToggleBtn" class="btn btn-admin">
-          <span>🔒 Organizer Sign-In</span>
-        </button>
-        <a href="#schedule" class="btn btn-primary btn-sm">Tonight's Dance</a>
-        <button id="mobileMenuToggle" class="mobile-menu-toggle" aria-label="Toggle Navigation">☰</button>
-      </div>
+    <!-- Announcement Bar -->
+    <div class="top-announcement">
+        <span>🤠 Next Country Swing Night: Tuesday 8:00 PM @ Fairgrounds Event Center!</span>
+        <a href="#schedule" class="announcement-link">See Full Schedule &rarr;</a>
     </div>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <div class="hero-eyebrow">
-          <span>📍 Cache Valley • Logan, Utah</span>
-        </div>
-        <h1 class="hero-title">
-          Country Swing & Line Dancing in <span class="script-accent">Cache Valley</span>
-        </h1>
-        <p class="hero-desc">
-          Weekly dances with beginner-friendly lessons, high-energy aerials, and the best country music in Northern Utah. No partner or dance experience required. Just grab your boots and come have fun!
-        </p>
-
-        <div class="hero-actions">
-          <a href="#schedule" class="btn btn-primary">
-            📅 View Monthly Schedule
-          </a>
-          <a href="https://www.instagram.com/sagehalldance/" target="_blank" rel="noopener" class="btn btn-outline">
-            📸 Follow @sagehalldance
-          </a>
-        </div>
-
-        <div class="hero-stats-row">
-          <div class="stat-item">
-            <span class="stat-num">3+</span>
-            <span class="stat-label">Rotating Logan Venues</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-num">8 PM</span>
-            <span class="stat-label">Lessons Every Night</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-num">100%</span>
-            <span class="stat-label">Beginner Friendly</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Hero Visual Flyer Card -->
-      <div class="hero-card-flyer">
-        <div class="flyer-badge-art">
-          <img src="assets/img/logo.png" alt="Sage Hall Badge" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--border-color);">
-        </div>
-        <div class="flyer-heading">SAGE HALL</div>
-        <div class="flyer-subheading">Country Swing Dance Schedule</div>
-
-        <!-- Dynamic upcoming highlight -->
-        <div id="heroNextDance" class="next-dance-highlight">
-          <div class="highlight-label">🤠 NEXT UPCOMING DANCE</div>
-          <div class="highlight-venue">Loading next dance...</div>
-        </div>
-
-        <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.4;">
-          Rotating between Fairgrounds Event Center, Mountain Valley Athletics & Cache Bar.
-        </p>
-
-        <div class="flyer-bottom-border">
-          <span>★</span><span>👢</span><span>🌵</span><span>🤠</span><span>★</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Schedule & Calendar Section -->
-  <section id="schedule" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Dance Nights & Lessons</span>
-        <h2 class="section-title">Upcoming Dance Calendar</h2>
-        <p class="section-subtitle">
-          Lessons start promptly at the beginning of each night, followed by open social dancing. Check below for this week's venue and times!
-        </p>
-      </div>
-
-      <!-- Controls & Filter Bar -->
-      <div class="schedule-controls">
-        <div class="filter-pills">
-          <button class="pill-btn active" data-filter="all">All Dances</button>
-          <button class="pill-btn" data-filter="fairgrounds">Fairgrounds Event Center</button>
-          <button class="pill-btn" data-filter="mountain_valley">Mountain Valley Athletics</button>
-          <button class="pill-btn" data-filter="cache_bar">Cache Bar (21+)</button>
-        </div>
-
-        <div style="display: flex; align-items: center; gap: 12px;">
-          <button id="addEventScheduleBtn" class="btn btn-primary btn-sm" onclick="window.openAdminModal()" style="display: none;">
-            + Add New Dance
-          </button>
-
-          <div class="view-mode-toggle">
-            <button id="viewAgendaBtn" class="view-btn active">
-              📋 List View
-            </button>
-            <button id="viewCalendarBtn" class="view-btn">
-              📅 Calendar
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Agenda / List View -->
-      <div id="eventsAgendaGrid" class="events-agenda-grid">
-        <!-- Rendered dynamically via JavaScript -->
-      </div>
-
-      <!-- Calendar Month Grid View -->
-      <div id="calendarGridView" class="calendar-grid-view" style="display: none;">
-        <div class="cal-header-bar">
-          <h3 id="calMonthTitle" class="cal-month-title">Current Month</h3>
-          <div class="cal-nav-buttons">
-            <button id="calPrevBtn" class="btn btn-outline btn-sm">&larr; Prev Month</button>
-            <button id="calNextBtn" class="btn btn-outline btn-sm">Next Month &rarr;</button>
-          </div>
-        </div>
-
-        <div class="cal-days-header">
-          <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
-        </div>
-        <div id="calDaysGrid" class="cal-days-grid">
-          <!-- Calendar cells rendered via JavaScript -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Instagram Reels & Social Section -->
-  <section id="reels" class="reels-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag" style="color: var(--honey);">Follow On Social</span>
-        <h2 class="section-title">Watch the Moves on Instagram</h2>
-        <p class="section-subtitle">
-          Weekly move tutorials, line dance breakdowns, and dance floor hype from our Instagram reels.
-        </p>
-      </div>
-
-      <div id="reelsGrid" class="reels-grid">
-        <!-- Reel cards rendered dynamically via JavaScript -->
-      </div>
-
-      <div style="text-align: center; margin-top: 48px;">
-        <a href="https://www.instagram.com/sagehalldance/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 1rem; padding: 14px 32px;">
-          📸 Follow @sagehalldance on Instagram
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- First-Timers Guide Section -->
-  <section id="beginners" class="section faq-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">New to Country Swing?</span>
-        <h2 class="section-title">First-Timer FAQ</h2>
-        <p class="section-subtitle">
-          Everything you need to know before stepping out on the dance floor.
-        </p>
-      </div>
-
-      <div class="faq-grid">
-        <div class="faq-card">
-          <h3 class="faq-q">🤠 Do I need to bring a partner?</h3>
-          <p class="faq-a">
-            No! In country swing, everyone rotates partners during lessons and social dances. Just show up and you'll find plenty of friendly people to dance with.
-          </p>
-        </div>
-
-        <div class="faq-card">
-          <h3 class="faq-q">👢 What should I wear?</h3>
-          <p class="faq-a">
-            Casual country or athletic wear is great (jeans, t-shirts, flannels). For footwear, leather-soled boots or smooth sneakers make spinning and sliding effortless. Avoid grippy running shoes if possible!
-          </p>
-        </div>
-
-        <div class="faq-card">
-          <h3 class="faq-q">🎓 What if I've never danced before?</h3>
-          <p class="faq-a">
-            You're in the right place! We start every dance night with an introductory lesson covering the basic step, inside turn, and lead/follow connection so you feel confident right away.
-          </p>
-        </div>
-
-        <div class="faq-card">
-          <h3 class="faq-q">💵 How much is entry?</h3>
-          <p class="faq-a">
-            Entry is typically $8 at the door (cash, card, or Venmo accepted). Lessons are included with your general admission!
-          </p>
-        </div>
-
-        <div class="faq-card">
-          <h3 class="faq-q">📍 Why do the locations change?</h3>
-          <p class="faq-a">
-            We partner with premier venues across Logan (Cache County Fairgrounds, Mountain Valley Athletics, and Cache Bar) to bring you massive hardwood dance floors and varied atmospheres throughout the month.
-          </p>
-        </div>
-
-        <div class="faq-card">
-          <h3 class="faq-q">🍺 Are all events 21+?</h3>
-          <p class="faq-a">
-            Most of our dances at Fairgrounds and Mountain Valley Athletics are <strong>All Ages</strong> (popular with USU students!). Events specifically marked at Cache Bar are 21+ only.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Venues & Directions Section -->
-  <section id="venues" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Where We Dance</span>
-        <h2 class="section-title">Our Rotating Logan Venues</h2>
-        <p class="section-subtitle">
-          Check your event card for tonight's specific location. Here is where to find each venue:
-        </p>
-      </div>
-
-      <div class="venues-grid">
-        <!-- Fairgrounds Event Center -->
-        <div class="venue-card">
-          <div class="venue-header">
-            <span class="venue-badge-pill" style="background: var(--honey-light); color: #92540D;">All Ages Welcome</span>
-            <h3 class="venue-name">Cache County Event Center</h3>
-            <div class="venue-address">📍 490 S 500 W, Logan, UT 84321</div>
-          </div>
-          <p class="venue-desc">
-            A massive premier venue featuring an expansive smooth floor, top-notch sound system, and lots of space for big aerials, dips, and trick practice.
-          </p>
-          <div class="venue-actions">
-            <a href="https://maps.google.com/?q=Cache+County+Event+Center+Logan+UT" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
-              🗺️ Open in Google Maps
+    <!-- Header Section -->
+    <header id="navbar">
+        <div class="header-container">
+            <a href="#home" class="logo-link">
+                <img src="assets/logo_dark_only.png" alt="Sage Hall Dance Logo" id="logo">
             </a>
-          </div>
-        </div>
-
-        <!-- Mountain Valley Athletics -->
-        <div class="venue-card">
-          <div class="venue-header">
-            <span class="venue-badge-pill" style="background: var(--denim-light); color: var(--denim);">All Ages Welcome</span>
-            <h3 class="venue-name">Mountain Valley Athletics</h3>
-            <div class="venue-address">📍 Logan, UT</div>
-          </div>
-          <p class="venue-desc">
-            The heart of Thursday and Saturday night college social dances. Fast-paced country swing, energetic line dances, and an incredible community.
-          </p>
-          <div class="venue-actions">
-            <a href="https://maps.google.com/?q=Mountain+Valley+Athletics+Logan+UT" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
-              🗺️ Open in Google Maps
-            </a>
-          </div>
-        </div>
-
-        <!-- The Cache Bar -->
-        <div class="venue-card">
-          <div class="venue-header">
-            <span class="venue-badge-pill" style="background: #FEECEB; color: #C53030;">21+ Only (Valid ID)</span>
-            <h3 class="venue-name">The Cache Bar</h3>
-            <div class="venue-address">📍 119 S Main St, Logan, UT 84321</div>
-          </div>
-          <p class="venue-desc">
-            Downtown Logan night featuring country swing, craft drinks, and an intimate bar vibe. Perfect mid-week Wednesday night hangout.
-          </p>
-          <div class="venue-actions">
-            <a href="https://maps.google.com/?q=119+S+Main+St+Logan+UT" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
-              🗺️ Open in Google Maps
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h3>SAGE HALL DANCE</h3>
-          <p>
-            Cache Valley's premier country swing and line dancing community in Logan, Utah. Beginner lessons, rotating venues, and unforgettable nights.
-          </p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="#schedule">Upcoming Schedule</a></li>
-            <li><a href="#venues">Venue Locations</a></li>
-            <li><a href="#reels">Instagram Reels</a></li>
-            <li><a href="#beginners">First-Timer FAQ</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Connect</h4>
-          <ul class="footer-links">
-            <li><a href="https://www.instagram.com/sagehalldance/" target="_blank" rel="noopener">Instagram: @sagehalldance</a></li>
-            <li><a href="#" onclick="window.openAdminModal(); return false;">Organizer Dashboard</a></li>
-            <li><a href="https://github.com/amontesinos/sagehalldance" target="_blank" rel="noopener">GitHub Project Repo</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div>&copy; 2026 Sage Hall Dance. Mockup website built for GitHub Pages hosting.</div>
-        <div>Logan, Utah • Country Swing & Line Dance</div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Admin / Organizer Modal -->
-  <div id="adminModal" class="modal-overlay">
-    <div class="modal-content">
-      <button id="closeAdminModal" class="modal-close-btn">&times;</button>
-      
-      <!-- Section 1: Auth / PIN -->
-      <div id="adminAuthSection">
-        <h3 class="modal-title">Organizer Sign-In</h3>
-        <p class="modal-subtitle">Sign in to add dances, edit venues, or configure calendar synchronization.</p>
-        
-        <form id="adminLoginForm">
-          <div class="form-group">
-            <label for="adminPinInput">Enter Organizer PIN / Password:</label>
-            <input type="password" id="adminPinInput" class="form-input" placeholder="Enter demo PIN: 1234" value="1234">
-            <span style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px; display: block;">
-              (Demo PIN: <strong>1234</strong>)
-            </span>
-          </div>
-          <button type="submit" class="btn btn-primary" style="width: 100%;">Sign In</button>
-        </form>
-      </div>
-
-      <!-- Section 2: Dashboard (When Logged In) -->
-      <div id="adminDashboardSection" style="display: none;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
-          <div>
-            <h3 class="modal-title" style="margin-bottom: 0;">Organizer Dashboard</h3>
-            <span style="font-size: 0.82rem; color: var(--sage); font-weight: 700;">● Active Session</span>
-          </div>
-          <button onclick="window.logoutAdmin()" class="btn btn-outline btn-sm">Sign Out</button>
-        </div>
-
-        <div class="admin-tabs">
-          <div class="admin-tab-btn active" data-tab="tabAddEvent">➕ Add Dance</div>
-          <div class="admin-tab-btn" data-tab="tabSync">📲 Google Cal Sync</div>
-          <div class="admin-tab-btn" data-tab="tabSettings">⚙️ Settings</div>
-        </div>
-
-        <!-- Tab: Add Event -->
-        <div id="tabAddEvent" class="admin-tab-pane">
-          <form id="addEventForm">
-            <div class="form-group">
-              <label for="evTitle">Event Title</label>
-              <input type="text" id="evTitle" class="form-input" placeholder="e.g. Country Swing & Line Dancing" required>
-            </div>
-
-            <div class="form-row-2">
-              <div class="form-group">
-                <label for="evDate">Date</label>
-                <input type="date" id="evDate" class="form-input" required>
-              </div>
-              <div class="form-group">
-                <label for="evVenue">Venue</label>
-                <select id="evVenue" class="form-select">
-                  <option value="fairgrounds">Fairgrounds Event Center</option>
-                  <option value="mountain_valley">Mountain Valley Athletics</option>
-                  <option value="cache_bar">Cache Bar (21+)</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-row-2">
-              <div class="form-group">
-                <label for="evLessonTime">Lesson Time</label>
-                <input type="text" id="evLessonTime" class="form-input" placeholder="8:00 PM (Beginner)">
-              </div>
-              <div class="form-group">
-                <label for="evSocialTime">Social Dance Time</label>
-                <input type="text" id="evSocialTime" class="form-input" placeholder="9:00 PM - 11:30 PM">
-              </div>
-            </div>
-
-            <div class="form-row-2">
-              <div class="form-group">
-                <label for="evPrice">Admission Price</label>
-                <input type="text" id="evPrice" class="form-input" placeholder="$8 Entry">
-              </div>
-              <div class="form-group">
-                <label for="evTheme">Theme / Highlight</label>
-                <input type="text" id="evTheme" class="form-input" placeholder="e.g. Denim Night, USU Aggie Night">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="evNotes">Event Notes / Details</label>
-              <textarea id="evNotes" class="form-textarea" rows="2" placeholder="Notes on shoes, parking, line dances..."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary" style="width: 100%;">Publish to Calendar</button>
-          </form>
-        </div>
-
-        <!-- Tab: Google Calendar Sync -->
-        <div id="tabSync" class="admin-tab-pane" style="display: none;">
-          <div class="sync-info-box">
-            <h4>💡 Zero-Code Updating: Google Calendar API Sync</h4>
-            <p>
-              Instead of manually logging into this website to add events, link your public Google Calendar. 
-              Once linked, simply add a dance to your Google Calendar app on your phone, and it instantly appears here!
-            </p>
-          </div>
-
-          <div class="form-group">
-            <label for="gcalIdInput">Public Google Calendar ID:</label>
-            <input type="text" id="gcalIdInput" class="form-input" placeholder="e.g. your_id@group.calendar.google.com">
-          </div>
-          <div class="form-group">
-            <label for="gcalApiKeyInput">Google Cloud API Key (Calendar API v3 enabled):</label>
-            <input type="password" id="gcalApiKeyInput" class="form-input" placeholder="AIzaSy...">
-          </div>
-          <button class="btn btn-primary" onclick="window.saveGoogleCalendarConfig()">
-            Save & Connect Live Calendar
-          </button>
-        </div>
-
-        <!-- Tab: Settings -->
-        <div id="tabSettings" class="admin-tab-pane" style="display: none;">
-          <div style="display: flex; flex-direction: column; gap: 14px;">
-            <p style="font-size: 0.9rem; color: var(--text-muted);">
-              Changes made in organizer mode are saved to local storage so you can test them live on your device.
-            </p>
-            <button class="btn btn-outline" onclick="window.resetDefaultEvents()">
-              🔄 Reset to Default Schedule Data
+            
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
             </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Scripts -->
-  <script type="module" src="assets/js/app.js"></script>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#calendar">Calendar</a></li>
+                    <li><a href="#venues">Venues</a></li>
+                    <li><a href="#reels">Reels & Social</a></li>
+                    <li><a href="#dancers">Dancers of the Week</a></li>
+                    <li><a href="#calendar" class="nav-btn"><i class="fa-regular fa-calendar-check"></i> Sign In / Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="badge-tag">Country Swing Dance Hall</div>
+            <h1 class="script-title">Country Swing Dance</h1>
+            <p class="hero-subtitle">Northern Utah's favorite social dance community. Lessons, social dancing, and great music every week.</p>
+            <div class="hero-actions">
+                <a href="#schedule" class="btn btn-primary"><i class="fa-solid fa-calendar-days"></i> View Schedule</a>
+                <a href="#reels" class="btn btn-outline"><i class="fa-brands fa-instagram"></i> Watch Instagram Reels</a>
+            </div>
+            <div class="hero-features">
+                <div class="feat-item"><i class="fa-solid fa-people-group"></i> All Levels Welcome</div>
+                <div class="feat-item"><i class="fa-solid fa-shoe-prints"></i> No Partner Needed</div>
+                <div class="feat-item"><i class="fa-solid fa-music"></i> Weekly Social Nights</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monthly Flyer Schedule Spotlight -->
+    <section id="schedule" class="section-container schedule-section">
+        <div class="section-header">
+            <span class="sub-heading">Live From The Dancehall Flyer</span>
+            <h2 class="section-title">September Dance Schedule</h2>
+            <div class="title-divider"></div>
+            <p class="section-desc">Catch us throughout the week across our featured venues. Beginner-friendly swing lessons followed by open social dancing!</p>
+        </div>
+
+        <div class="schedule-grid">
+            <div class="schedule-card-list">
+                <!-- Events from flyer -->
+                <div class="schedule-item">
+                    <div class="date-badge">
+                        <span class="day-num">1st</span>
+                        <span class="day-name">TUE</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Fairgrounds Event Center</h3>
+                        <p class="event-meta"><i class="fa-regular fa-clock"></i> 8:00 PM &bull; Lessons & Social Dance</p>
+                    </div>
+                    <span class="venue-pill fairgrounds">All Ages</span>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="date-badge">
+                        <span class="day-num">3rd</span>
+                        <span class="day-name">THUR</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Mountain Valley Athletics</h3>
+                        <p class="event-meta"><i class="fa-regular fa-clock"></i> 9:00 PM &bull; Late Night Social</p>
+                    </div>
+                    <span class="venue-pill mva">Open Floor</span>
+                </div>
+
+                <div class="schedule-item highlight">
+                    <div class="date-badge highlight-badge">
+                        <span class="day-num">8th</span>
+                        <span class="day-name">TUE</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Fairgrounds Event Center</h3>
+                        <p class="event-meta"><i class="fa-regular fa-clock"></i> 8:00 PM &bull; Country Swing & Line Dance</p>
+                    </div>
+                    <span class="venue-pill fairgrounds">Feature Night</span>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="date-badge">
+                        <span class="day-num">9th</span>
+                        <span class="day-name">WED</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Cache Bar</h3>
+                        <p class="event-meta"><i class="fa-regular fa-clock"></i> 7:00 PM &bull; 21+ Social Swing</p>
+                    </div>
+                    <span class="venue-pill bar">21+ Only</span>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="date-badge">
+                        <span class="day-num">15th</span>
+                        <span class="day-name">TUE</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Mountain Valley Athletics</h3>
+                        <p class="event-meta"><i class="fa-regular fa-clock"></i> 8:00 PM &bull; Social Country Swing</p>
+                    </div>
+                    <span class="venue-pill mva">All Ages</span>
+                </div>
+
+                <div class="schedule-item highlight">
+                    <div class="date-badge highlight-badge">
+                        <span class="day-num">19th</span>
+                        <span class="day-name">SAT</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Mountain Valley Athletics</h3>
+                        <p class="event-meta"><i class="fa-regular fa-clock"></i> 9:00 PM &bull; Saturday Night Stomp</p>
+                    </div>
+                    <span class="venue-pill mva">Weekend Special</span>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="date-badge">
+                        <span class="day-num">23rd</span>
+                        <span class="day-name">WED</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Cache Bar</h3>
+                        <p class="event-meta"><i class="fa-regular fa-clock"></i> 7:00 PM &bull; 21+ Social Night</p>
+                    </div>
+                    <span class="venue-pill bar">21+ Only</span>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="date-badge">
+                        <span class="day-num">29th</span>
+                        <span class="day-name">TUE</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Mountain Valley Athletics</h3>
+                        <p class="event-meta"><i class="fa-regular fa-clock"></i> 8:00 PM &bull; Season Sendoff</p>
+                    </div>
+                    <span class="venue-pill mva">All Ages</span>
+                </div>
+            </div>
+
+            <!-- Flyer Showcase Side Card -->
+            <div class="flyer-spotlight-card">
+                <div class="spotlight-header">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Official Schedule Flyer</span>
+                </div>
+                <div class="spotlight-body">
+                    <img src="assets/logo_dark_only.png" alt="Sage Hall Dance Logo" class="flyer-mini-logo">
+                    <h3>Keep Dancing With Us</h3>
+                    <p>New monthly schedules drop on Instagram every month. Follow along for pop-up workshops, guest instructors, and competition nights!</p>
+                    <ul class="spotlight-perks">
+                        <li><i class="fa-solid fa-check"></i> Clean hardwood floors</li>
+                        <li><i class="fa-solid fa-check"></i> High-energy country DJs</li>
+                        <li><i class="fa-solid fa-check"></i> Friendly dance community</li>
+                    </ul>
+                    <a href="#calendar" class="btn btn-primary btn-block"><i class="fa-solid fa-calendar-plus"></i> View Google Calendar</a>
+                    <a href="assets/september_flyer.png" target="_blank" class="btn btn-outline btn-block" style="margin-top: 10px;"><i class="fa-solid fa-image"></i> View Original Flyer</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Calendar Section -->
+    <section id="calendar" class="section-container calendar-section">
+        <div class="section-header">
+            <span class="sub-heading">Real-Time Sync</span>
+            <h2 class="section-title">Interactive Event Calendar</h2>
+            <div class="title-divider"></div>
+            <p class="section-desc">Our calendar syncs directly with Google Calendar so you can add upcoming dances right to your phone.</p>
+        </div>
+
+        <!-- Admin / Easy Update Bar -->
+        <div class="calendar-admin-bar">
+            <div class="admin-info">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span><strong>Dancehall Organizer?</strong> Easily sign in to your Google Account to create, change, or remove events on the fly.</span>
+            </div>
+            <div class="admin-actions">
+                <a href="https://calendar.google.com" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                    <i class="fa-brands fa-google"></i> Sign In to Google Calendar
+                </a>
+                <button id="configure-calendar-btn" class="btn btn-sm btn-outline">
+                    <i class="fa-solid fa-gear"></i> Change Calendar ID
+                </button>
+            </div>
+        </div>
+
+        <!-- Calendar Embed Container -->
+        <div class="calendar-wrapper">
+            <div class="calendar-responsive">
+                <iframe id="google-calendar-iframe" 
+                        src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FDenver" 
+                        style="border: 0" 
+                        width="100%" 
+                        height="620" 
+                        frameborder="0" 
+                        scrolling="no">
+                </iframe>
+            </div>
+            <div class="calendar-caption">
+                <small><i class="fa-solid fa-info-circle"></i> Tip: Click on any event above to copy it to your personal calendar or view venue directions.</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Locations -->
+    <section id="venues" class="section-container venues-section">
+        <div class="section-header">
+            <span class="sub-heading">Where We Dance</span>
+            <h2 class="section-title">Our Partner Venues</h2>
+            <div class="title-divider"></div>
+        </div>
+
+        <div class="venues-grid">
+            <div class="venue-card">
+                <div class="venue-icon"><i class="fa-solid fa-landmark"></i></div>
+                <h3>Fairgrounds Event Center</h3>
+                <p class="venue-times">Tuesdays &bull; 8:00 PM</p>
+                <p class="venue-desc">Spacious dance floor, huge sound system, and our flagship Tuesday night country swing crowd.</p>
+                <span class="badge">All Ages</span>
+            </div>
+
+            <div class="venue-card highlight-venue">
+                <div class="venue-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                <h3>Mountain Valley Athletics</h3>
+                <p class="venue-times">Thursdays & Saturdays &bull; 8:00 PM - 9:00 PM</p>
+                <p class="venue-desc">Premium shock-absorbent athletic flooring that lets you spin and swing all night without tired feet.</p>
+                <span class="badge">Popular Spot</span>
+            </div>
+
+            <div class="venue-card">
+                <div class="venue-icon"><i class="fa-solid fa-martini-glass"></i></div>
+                <h3>Cache Bar (21+)</h3>
+                <p class="venue-times">Wednesdays &bull; 7:00 PM</p>
+                <p class="venue-desc">Relaxed 21+ vibe with craft drinks, good food, and intimate acoustic and country swing dancing.</p>
+                <span class="badge bar-badge">21+ ID Required</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Reels & Social Section -->
+    <section id="reels" class="section-container instagram-section">
+        <div class="section-header">
+            <span class="sub-heading">Stay Connected</span>
+            <h2 class="section-title">Latest Reels & Highlights</h2>
+            <div class="title-divider"></div>
+            <p class="section-desc">Follow <a href="https://instagram.com" target="_blank" class="ig-link">@sagehalldance</a> on Instagram for weekly recap reels, lesson tutorials, and dancer spotlights!</p>
+        </div>
+
+        <div class="reels-grid">
+            <!-- Reel Card 1 -->
+            <div class="reel-card">
+                <div class="reel-thumb reel-thumb-1">
+                    <span class="reel-tag"><i class="fa-solid fa-film"></i> Reel</span>
+                    <div class="reel-play-btn"><i class="fa-solid fa-play"></i></div>
+                    <span class="reel-views"><i class="fa-solid fa-heart"></i> 1.4k</span>
+                </div>
+                <div class="reel-info">
+                    <h4>Tuesday Night Barrel Rolls 🔥</h4>
+                    <p>Fairgrounds was packed! Great energy from all the new dancers this week.</p>
+                    <a href="https://instagram.com" target="_blank" class="reel-link">Watch on Instagram &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Reel Card 2 -->
+            <div class="reel-card">
+                <div class="reel-thumb reel-thumb-2">
+                    <span class="reel-tag"><i class="fa-solid fa-film"></i> Reel</span>
+                    <div class="reel-play-btn"><i class="fa-solid fa-play"></i></div>
+                    <span class="reel-views"><i class="fa-solid fa-heart"></i> 2.8k</span>
+                </div>
+                <div class="reel-info">
+                    <h4>Pretzel Turn Breakdown 🤠</h4>
+                    <p>Quick tutorial from our 8:00 PM beginner workshop. Practice this one at home!</p>
+                    <a href="https://instagram.com" target="_blank" class="reel-link">Watch on Instagram &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Reel Card 3 -->
+            <div class="reel-card">
+                <div class="reel-thumb reel-thumb-3">
+                    <span class="reel-tag"><i class="fa-solid fa-camera"></i> Photos</span>
+                    <div class="reel-play-btn"><i class="fa-solid fa-images"></i></div>
+                    <span class="reel-views"><i class="fa-solid fa-heart"></i> 950</span>
+                </div>
+                <div class="reel-info">
+                    <h4>Saturday Night Photo Dump 📸</h4>
+                    <p>Smiles, boots, and good tunes at Mountain Valley Athletics.</p>
+                    <a href="https://instagram.com" target="_blank" class="reel-link">Watch on Instagram &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-cta">
+            <a href="https://instagram.com" target="_blank" class="btn btn-primary">
+                <i class="fa-brands fa-instagram"></i> Follow @sagehalldance
+            </a>
+        </div>
+    </section>
+
+    <!-- Dancers of the Week Section -->
+    <section id="dancers" class="section-container dancers-section">
+        <div class="section-header">
+            <span class="sub-heading">Community Spotlight</span>
+            <h2 class="section-title">Dancers of the Week</h2>
+            <div class="title-divider"></div>
+            <p class="section-desc">Each week we celebrate dancers who bring incredible energy, encouragement, and smooth moves to the floor!</p>
+        </div>
+
+        <div class="dancers-grid">
+            <div class="dancer-card">
+                <div class="dancer-avatar">
+                    <i class="fa-solid fa-hat-cowboy"></i>
+                </div>
+                <div class="dancer-badge">Lead of the Week</div>
+                <h3>Wyatt Harrison</h3>
+                <p class="dancer-fav"><strong>Favorite Move:</strong> Inside Duck & Dip</p>
+                <p class="dancer-quote">"Sage Hall has the best vibe in Utah. Always welcoming to new dancers!"</p>
+                <div class="dancer-social">
+                    <span><i class="fa-brands fa-instagram"></i> @wyatt_swing</span>
+                </div>
+            </div>
+
+            <div class="dancer-card featured-dancer">
+                <div class="dancer-avatar star-avatar">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="dancer-badge star-badge">Follow of the Week</div>
+                <h3>Savannah Miller</h3>
+                <p class="dancer-fav"><strong>Favorite Move:</strong> Traveling Spin & Aerial Catch</p>
+                <p class="dancer-quote">"Started with zero dance experience 6 months ago—now I can't imagine my Tuesdays without it!"</p>
+                <div class="dancer-social">
+                    <span><i class="fa-brands fa-instagram"></i> @savannah_dances</span>
+                </div>
+            </div>
+
+            <div class="dancer-card">
+                <div class="dancer-avatar">
+                    <i class="fa-solid fa-music"></i>
+                </div>
+                <div class="dancer-badge">Rising Stars</div>
+                <h3>Colton & Hailey</h3>
+                <p class="dancer-fav"><strong>Favorite Song:</strong> 'Buy Dirt'</p>
+                <p class="dancer-quote">"They nailed their first competition routine and cheered on everyone in the room."</p>
+                <div class="dancer-social">
+                    <span><i class="fa-brands fa-instagram"></i> @colton_hailey_swing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="assets/logo_dark_only.png" alt="Sage Hall Dance Logo" class="footer-logo">
+                <p>Northern Utah's premier Country Swing Dance hall & social community.</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#schedule">Monthly Schedule</a></li>
+                    <li><a href="#calendar">Google Calendar</a></li>
+                    <li><a href="#venues">Venues</a></li>
+                    <li><a href="#dancers">Dancers of the Week</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-venues">
+                <h4>Dance Locations</h4>
+                <p><strong>Fairgrounds Event Center</strong><br>Tuesdays @ 8pm</p>
+                <p><strong>Mountain Valley Athletics</strong><br>Thursdays & Saturdays</p>
+                <p><strong>Cache Bar (21+)</strong><br>Wednesdays @ 7pm</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sage Hall Dance. Revamped & ready for GitHub Pages hosting.</p>
+        </div>
+    </footer>
+
+    <!-- Calendar Configuration Modal -->
+    <div id="calendar-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-gear"></i> Set Your Google Calendar ID</h3>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>To display your own dancehall Google Calendar on this site, paste your <strong>Public Google Calendar ID</strong> or embed URL below:</p>
+                <label for="calendar-id-input">Google Calendar ID or Embed URL:</label>
+                <input type="text" id="calendar-id-input" placeholder="e.g., yourdancehall@gmail.com or embed URL">
+                <small>You can find this in Google Calendar &rarr; Settings &rarr; Integrate Calendar &rarr; Calendar ID.</small>
+            </div>
+            <div class="modal-footer">
+                <button id="save-calendar-id" class="btn btn-primary">Save & Apply</button>
+                <button id="reset-calendar-id" class="btn btn-outline">Reset to Default</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

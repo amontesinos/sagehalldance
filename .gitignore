@@ -1,0 +1,13 @@
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Editor and IDE directories
+.vscode/
+.idea/
+
+# Node / Python build artifacts (if extended later)
+__pycache__/
+*.pyc
+node_modules/
+dist/
